@@ -1,0 +1,48 @@
+Projeto com FeedBack - Projeto 04 do curso Formação Cientista de Dados. DSA
+
+Projeto consiste na analise de sentimentos de dados retirados do Twitter sobre o ChatGPT utilizando o PySpark
+
+DATASET ORIGINAL
+82129 Linhas / 20 colunas
+
+Variáveis e seus dados missing
+Datetime	Quantidade de None: 0
+Tweet Id	Quantidade de None: 13600
+Text		Quantidade de None: 14970
+Username	Quantidade de None: 31749
+Permalink	Quantidade de None: 38840
+User		Quantidade de None: 39949
+Outlinks	Quantidade de None: 54723
+CountLinks	Quantidade de None: 54087
+ReplyCount	Quantidade de None: 32651
+RetweetCount	Quantidade de None: 32334
+LikeCount	Quantidade de None: 32203
+QuoteCount	Quantidade de None: 32164
+ConversationId	Quantidade de None: 32157
+Language	Quantidade de None: 42913
+Source		Quantidade de None: 46679
+Media		Quantidade de None: 72204
+QuotedTweet	Quantidade de None: 64378
+MentionedUsers	Quantidade de None: 53380
+Hashtag		Quantidade de None: 47139 
+hastag_counts	Quantidade de None: 48168
+
+Foi utilizado apenas a variável Text do dataset.
+
+FRAMEWORKS UTILIZADOS
+Pandas: verificação / manipulação dos dados.
+Pyspark: manipulação dos dados.
+RE: para manipulação das Expressões Regulares.
+TextBlob: Para realizar a análise de sentimentos.
+Langdetect: Para remover idiomas diferentes do inglês.
+Wordcloud: Para a criação da nuvem de palavras.
+Matplotlib: Para a criação do plot da nuvem de palavras.
+
+RESULTADO DA ANÁLISE DE SENTIMENTOS.
++---------+-----+------------------+
+|Sentiment|count|       Porcentagem|
++---------+-----+------------------+
+| Negativo| 4580|12.559300189212163|
+| Positivo|12746| 34.95214851783805|
+|   Neutro|19098|52.370636465845834|
++---------+-----+------------------+
